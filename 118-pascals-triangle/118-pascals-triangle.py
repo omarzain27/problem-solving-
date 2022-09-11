@@ -7,7 +7,7 @@ class Solution:
         res = [[1] , [1 ,1]]
         for i in range(1,numRows-1):
             curr = [1]
-            for j in range(0,len(res[i])-1):
+            for j in range(0,len(res[-1])-1):
                 curr.append(res[i][j]+res[i][j+1])                
             curr.append(1)
             res.append(curr)
